@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop Registration</title>
+<style>
+  /* Add your CSS styling here */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://png.pngtree.com/background/20210709/original/pngtree-tech-line-background-simple-technology-business-picture-image_939006.jpg'); /* Add your image URL here */
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="registration-form">
+  <h2>Workshop Registration</h2>
+  <form action="submit_registration.php" method="post">
+    <div class="form-group">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" class="form-input" required>
+    </div>
+    <div class="form-group">
+      <label for="department" class="form-label">Department:</label>
+      <select id="department" name="department" class="form-select" required>
+        <option value="">Select Department</option>
+        <option value="AIE">AIE - Artificial Intelligence</option>
+        <option value="CYS">CYS - Cybersecurity</option>
+        <option value="CSE">CSE - Computer Science and Engineering</option>
+        <option value="ECE">ECE - Electronics and Communication Engineering</option>
+        <!-- Add more department options here if needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="rollno" class="form-label">Roll Number:</label>
+      <input type="text" id="rollno" name="rollno" class="form-input" required>
+    </div>
+    <div class="form-group">
+      <label for="workshop" class="form-label">Workshop Name:</label>
+      <select id="workshop" name="workshop" class="form-select" required>
+        <option value="">Select Workshop</option>
+        <option value="Workshop 1">Workshop 1: Cybersecurity Essentials</option>
+        <option value="Workshop 2">Workshop 2: Game Development Basics</option>
+        <option value="Workshop 3">Workshop 3: Web Development Fundamentals</option>
+        <!-- Add more workshop options here -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="phone" class="form-label">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" class="form-input" pattern="[0-9]{10}" required>
+      <small>Enter a 10-digit phone number.</small>
+    </div>
+    <div class="form-group">
+      <label for="dob" class="form-label">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" class="form-input" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Gender:</label>
+      <label><input type="radio" name="gender" value="Male"> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label>
+      <label><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="form-button">Register</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

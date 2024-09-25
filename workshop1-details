@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Security Essentials</title>
+<style>
+  /* Add your CSS styling here */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://example.com/background-image.jpg'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  .project-dates {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    padding: 15px;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Cyber Security Essentials</h1>
+  <p>
+    Cyber Security Essentials is a comprehensive course designed to provide participants with a solid understanding of the fundamentals of cybersecurity. The course covers topics such as network security, encryption, threat detection, and best practices to safeguard sensitive information.
+  </p>
+  <div class="project-dates">
+    <h2>Project Submission Dates</h2>
+    <p><strong>Project Proposal Submission:</strong> October 15, 20XX</p>
+    <p><strong>Project Presentation:</strong> November 10, 20XX</p>
+    <p><strong>Final Project Submission:</strong> November 20, 20XX</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshop Registration</title>
+<style>
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2019/08/amritapuri-university-1.jpg'); 
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgba(255,255,255,0.6); 
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .form-group {
+  }
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-select {
+    width: 106%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  .form-button {
+    display:block;
+    width: 105%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="registration-form">
+  <h2 style="text-align: center; color: #333;">Workshop Registration</h2>
+  <form action="submit_registration.php" method="post">
+    <div class="form-group">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" class="form-input" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="rollno" class="form-label">Roll Number:</label>
+      <input type="text" id="rollno" name="rollno" class="form-input" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="department" class="form-label">Department:</label>
+      <select id="department" name="department" class="form-select" required>
+        <option value="">Select Department</option>
+        <option value="AIE">AIE - Artificial Intelligence</option>
+        <option value="CYS">CYS - Cybersecurity</option>
+        <option value="CSE">CSE - Computer Science and Engineering</option>
+        <option value="ECE">ECE - Electronics and Communication Engineering</option>
+        
+      </select>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="workshop" class="form-label">Select Workshop:</label>
+      <select id="workshop" name="workshop" class="form-select" required>
+        <option value="">Select Workshop</option>
+        <option value="Workshop 1">Workshop 1: Cybersecurity Essentials</option>
+        <option value="Workshop 2">Workshop 2: Game Development Basics</option>
+        <option value="Workshop 3">Workshop 3: Web Development Fundamentals</option>
+        
+      </select>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="year" class="form-label">Year of Study:</label>
+      <select id="year" name="year" class="form-select" required>
+        <option value="">Select Year</option>
+        <option value="1">1st Year</option>
+        <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" id="email" name="email" class="form-input" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="phone" class="form-label">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" class="form-input" pattern="[0-9]{10}" required>
+      <small style="opacity: 0.8;">Enter a 10-digit phone number.</small>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="address" class="form-label">Address:</label>
+      <input type="text" id="address" name="address" class="form-input" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="state" class="form-label">State:</label>
+      <select id="state" name="state" class="form-select" required>
+        <option value="">Select State</option>
+        <option value="Andhra Pradesh">Andhra Pradesh</option>
+        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+        <option value="Assam">Assam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Chhattisgarh">Chhattisgarh</option>
+        <option value="Goa">Goa</option>
+        <option value="Gujarat">Gujarat</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Himachal Pradesh">Himachal Pradesh</option>
+        <option value="Jharkhand">Jharkhand</option>
+        <option value="Karnataka">Karnataka</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Madhya Pradesh">Madhya Pradesh</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Manipur">Manipur</option>
+        <option value="Meghalaya">Meghalaya</option>
+        <option value="Mizoram">Mizoram</option>
+        <option value="Nagaland">Nagaland</option>
+        <option value="Odisha">Odisha</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Sikkim">Sikkim</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Telangana">Telangana</option>
+        <option value="Tripura">Tripura</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="West Bengal">West Bengal</option>
+      </select>
+    </div>
+    <br>
+    
+    <div class="form-group">
+      <label class="form-label">Gender:</label>
+      <label class="form-radio"><input type="radio" name="gender" value="Male"> Male</label>
+      <label class="form-radio"><input type="radio" name="gender" value="Female"> Female</label>
+      <label class="form-radio"><input type="radio" name="gender" value="Other"> Other</label>
+    </div>
+
+    <br>
+    <div class="form-group">
+      <label for="dob" class="form-label">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" class="form-input" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="password" class="form-label">Password:</label>
+      <input type="password" id="password" name="password" class="form-input" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="confirm-password" class="form-label">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" class="form-input" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <button type="submit" class="form-button">Register</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
